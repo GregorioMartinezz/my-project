@@ -20,6 +20,12 @@ def comprueba_palindromo(cadena_original):
     return True if cadena_original == cadena_invertida else False
 
 
+# Esto primero son test para comprobar que funciona adecuadamente
+assert comprueba_palindromo("dabale arroz a la zorra el abad")
+assert comprueba_palindromo("yo hago yoga hoy")
+assert comprueba_palindromo("lol")
+assert not comprueba_palindromo("abcde")
+# Esto es el programa que pregunta la frase y comprueba
 cadena = input("Introduzca una frase: ")
 if comprueba_palindromo(cadena):
     print("¡Enhorabuena! La frase introducida es un palíndromo")
